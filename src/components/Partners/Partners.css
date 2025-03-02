@@ -1,0 +1,10 @@
+.partners {
+  background-color: #eec044;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.partners-wrapper {
+  padding: 5%;
+}

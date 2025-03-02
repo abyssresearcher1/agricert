@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+h2 {
+  font-family: "Moon Dance", serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.services {
+  background-color: rgb(255, 255, 255);
+}
+
+.services-title h2 {
+  background-color: #f8f7f3;
+  font-family: "Noto Sans", serif;
+  font-weight: 500;
+  padding-top: 5%;
+}
+
+.services-item {
+  padding: 10px;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+}
+
+.services-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 3% 0 0 0;
+  background-color: #f8f7f3;
+}
+
+.top-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.bottom-cards {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  background-image: url(../../assets/weed.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  background-attachment: fixed;
+}
+
+.gap p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/gap_logo.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.orgi p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/organic.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.ssr p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/SSR.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.numbers p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/2-22000.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.gmp p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/gmp.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.eco-cert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: url(../../assets/another-weed.png);
+  background-color: #2d442f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.eco-cert-title {
+  margin: 5%;
+  color: white;
+}
+
+.eco-certs-cards {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  gap: 20px;
+}
+
+.eco-cert-item {
+  background-color: #fff;
+}
+
+.feet-mmm p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/feet-mmm.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.froggo p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/froggo.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.greenday p:after {
+  display: flex;
+  content: "";
+  background-image: url(../../assets/greenday.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.eco-cert-item {
+  padding: 2%;
+  -webkit-box-shadow: 3px 3px 35px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 35px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 35px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.education {
+  padding: 5% 0 5% 0;
+}
+
+.education-title {
+  padding: 3%;
+}
+
+.education-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-cards {
+  display: flex;
+  gap: 20px;
+  width: 85%;
+}
+
+.farmer {
+  background-image: url(../../assets/farmer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 300px;
+  padding: 2% 0 0 0;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.education-item {
+  cursor: pointer;
+}
+
+.education-item p {
+  background-color: #000000a0;
+  padding: 3%;
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.quality-control {
+  background-image: url(../../assets/quality-control.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 300px;
+  padding: 2% 0 0 0;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.course {
+  background-image: url(../../assets/course.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 34%;
+  height: 300px;
+  padding: 2% 0 0 0;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}

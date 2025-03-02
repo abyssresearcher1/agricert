@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+
+.header-navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  position: fixed;
+  width: 100%;
+  z-index: 100000000;
+}
+
+.header-navigation.scrolled {
+  background-color: #eec044;
+  transition: background-color 0.3s ease-in-out;
+  border-bottom: none;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 85%;
+}
+
+.header-logo h2 a {
+  font-family: "Moon Dance", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin: 0;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.angle {
+  height: 50px;
+  width: 0.5px;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 0;
+  transform: rotate(-40deg);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-item:hover a {
+  color: #f2f2f2;
+}
+
+.menu-item::marker {
+  content: none;
+}

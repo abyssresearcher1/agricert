@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.preview {
+  display: flex;
+  justify-content: center;
+}
+
+.preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.preview-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: "Noto Sans", serif;
+  color: #fff;
+}
+
+.preview-text span {
+  font-size: 20px;
+}
+
+.preview-text h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Noto Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.preview-btn {
+  padding: 15px;
+  width: 200px;
+  background-color: #4e9719;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  transition: 0.2s;
+  color: #fff;
+}
+
+.preview-btn:hover {
+  box-shadow: 10px 2px 30px -9px rgb(183, 183, 47);
+}
