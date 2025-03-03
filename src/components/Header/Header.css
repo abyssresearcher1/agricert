@@ -98,7 +98,7 @@
 @media (max-width: 900px) {
   .burger-menu {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     top: 15px;
     right: 20px;
   }

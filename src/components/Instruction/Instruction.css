@@ -1,14 +1,169 @@
-.section-container{
-    max-width: 1700px;
+.instructions {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
-.cards-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.instructions-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.category-content a{
-    text-decoration: none;
-    color: #4e9719;
+.seed-culture-title h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.seed-culture-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 5% 0 5% 0;
+}
+
+.slicer {
+  margin: 5% 0% 5% 0;
+}
+
+.material-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fruits-section-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.seed-culture-card,
+.organs-card,
+.bid,
+.tests,
+.taking-cert,
+.material-card,
+.fruits-section-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.seed-culture-card:hover,
+.organs-card:hover,
+.bid:hover,
+.tests:hover,
+.taking-cert:hover,
+.material-card:hover,
+.fruits-section-card:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #666;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #ff9800;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.succes {
+  margin-top: 40px;
+  background: #e8f5e9;
+  padding: 20px;
+  border-left: 5px solid #4caf50;
+  border-radius: 5px;
+}
+
+.succes h2 {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .seed-culture-cards,
+  .material-cards,
+  .fruits-section-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .seed-culture-cards,
+  .material-cards,
+  .fruits-section-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .seed-culture-title h2 {
+    font-size: 22px;
+  }
+
+  .seed-culture-card,
+  .organs-card,
+  .bid,
+  .tests,
+  .taking-cert,
+  .material-card,
+  .fruits-section-card {
+    padding: 18px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 576px) {
+  .instructions {
+    padding: 15px;
+  }
+
+  .seed-culture-title h2 {
+    font-size: 20px;
+  }
+
+  .seed-culture-card,
+  .organs-card,
+  .bid,
+  .tests,
+  .taking-cert,
+  .material-card,
+  .fruits-section-card {
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  ul li {
+    font-size: 13px;
+  }
 }

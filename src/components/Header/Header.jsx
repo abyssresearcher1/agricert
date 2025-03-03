@@ -18,7 +18,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className={`header-navigation ${scrolling ? "scrolled" : ""}`}>
+      <div
+        className={`header-navigation ${scrolling ? "scrolled" : ""}`}
+        style={{ background: menuOpen ? "#eec044" : "" }}
+      >
         <div className="header-wrapper">
           <div className="header-logo">
             <h2>

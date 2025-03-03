@@ -85,9 +85,7 @@
   border-radius: 20px;
 }
 
-/* Адаптивность по Bootstrap breakpoint */
 @media (max-width: 992px) {
-  /* md */
   .mission-container,
   .benefits-container {
     flex-direction: column;
@@ -103,7 +101,6 @@
 }
 
 @media (max-width: 768px) {
-  /* sm */
   .mission-title h2,
   .benefits-title h2 {
     font-size: 32px;
@@ -115,7 +112,6 @@
 }
 
 @media (max-width: 576px) {
-  /* xs */
   .mission-wrapper {
     padding-bottom: 5%;
   }

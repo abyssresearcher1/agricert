@@ -108,10 +108,9 @@
   color: #fff;
 }
 
-/* Для мобильных устройств (до 576px) */
 @media (max-width: 575.98px) {
   .footer-wrapper {
-    width: 95%;
+    width: 60%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -141,10 +140,9 @@
   }
 }
 
-/* Для планшетов (от 576px до 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer-wrapper {
-    width: 90%;
+    width: 60%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -170,7 +168,6 @@
   }
 }
 
-/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .footer-wrapper {
     width: 85%;
@@ -195,7 +192,6 @@
   }
 }
 
-/* Для стандартных десктопов (от 992px до 1199px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .footer-wrapper {
     width: 80%;
@@ -214,7 +210,6 @@
   }
 }
 
-/* Для больших экранов (1200px и выше) */
 @media (min-width: 1200px) {
   .footer-wrapper {
     width: 75%;

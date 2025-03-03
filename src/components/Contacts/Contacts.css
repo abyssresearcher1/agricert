@@ -63,7 +63,6 @@
   cursor: pointer;
 }
 
-/* Для мобильных устройств (до 576px) */
 @media (max-width: 575.98px) {
   .contacts-title {
     margin-top: 10%;
@@ -90,7 +89,6 @@
   }
 }
 
-/* Для планшетов (от 576px до 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .contacts-bg {
     padding: 8% 5%;
@@ -112,7 +110,6 @@
   }
 }
 
-/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .contacts-wrapper {
     flex-direction: row;
@@ -131,7 +128,6 @@
   }
 }
 
-/* Для стандартных десктопов (от 992px до 1199px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .contacts-wrapper {
     flex-direction: row;
@@ -148,7 +144,6 @@
   }
 }
 
-/* Для больших экранов (1200px и выше) */
 @media (min-width: 1200px) {
   .contacts-wrapper {
     flex-direction: row;
