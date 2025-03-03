@@ -1,0 +1,85 @@
+.mission-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/groceries.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 3%;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 85%;
+}
+
+.mission-text-block {
+  width: 40%;
+}
+
+.mission-title {
+  padding: 5%;
+}
+
+.mission-title h2 {
+  font-family: "Noto Sans", serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.mission-text-block p {
+  font-family: "Noto Sans", serif;
+  font-size: 18px;
+}
+
+.mission-image-block {
+  width: 45%;
+}
+
+.mission-image-block img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.benefits-title {
+  padding: 5%;
+}
+
+.benefits-title h2 {
+  font-family: "Noto Sans", serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.benefits-text-block p {
+  font-size: 18px;
+  font-family: "Noto Sans", serif;
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-container {
+  display: flex;
+  gap: 10%;
+  width: 85%;
+}
+
+.benefits-text-block {
+  width: 40%;
+}
+
+.benefits-image-block {
+  width: 45%;
+}
+
+.benefits-image-block img {
+  width: 100%;
+  border-radius: 20px;
+}

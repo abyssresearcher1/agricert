@@ -12,7 +12,7 @@ const Services = () => {
     <section className="services" id="services">
       <div className="services-wrapper">
         <div className="services-title">
-          <h2>Услуги</h2>
+          <h2>Сертификаты</h2>
         </div>
         <div className="services-cards">
           <div className="top-cards">

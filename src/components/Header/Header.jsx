@@ -39,7 +39,7 @@ const Header = () => {
                   </li>
                   <li className="menu-item">
                     <a href="#services" className="menu-item">
-                      Услуги
+                      Сертификаты
                     </a>
                   </li>
                   <li className="menu-item">
