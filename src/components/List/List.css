@@ -1,0 +1,158 @@
+/* Общие стили */
+.certification-list {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.list-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-title h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Стили для карточек */
+.culture-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.culture-card-block,
+.bean,
+.tech-culture,
+.feed-culture,
+.potato,
+.fruits,
+.Seed,
+.chem,
+.minerals,
+.organic,
+.AgroChem,
+.tech,
+.animals,
+.plastic {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.culture-card-block:hover,
+.bean:hover,
+.tech-culture:hover,
+.feed-culture:hover,
+.potato:hover,
+.fruits:hover,
+.Seed:hover,
+.chem:hover,
+.minerals:hover,
+.organic:hover,
+.AgroChem:hover,
+.tech:hover,
+.animals:hover,
+.plastic:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #666;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: transparent;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Стили для блока предупреждения */
+.warning {
+  margin-top: 40px;
+  background: #fff3cd;
+  padding: 20px;
+  border-left: 5px solid #ff9800;
+  border-radius: 5px;
+}
+
+.warning h2 {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Адаптивность по Bootstrap breakpoint */
+@media (max-width: 992px) {
+  /* md */
+  .culture-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* sm */
+  .culture-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .list-title h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* xs */
+  .certification-list {
+    padding: 20px;
+  }
+
+  .culture-card-block,
+  .bean,
+  .tech-culture,
+  .feed-culture,
+  .potato,
+  .fruits,
+  .Seed,
+  .chem,
+  .minerals,
+  .organic,
+  .AgroChem,
+  .tech,
+  .animals,
+  .plastic {
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}

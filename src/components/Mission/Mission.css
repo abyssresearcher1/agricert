@@ -1,3 +1,4 @@
+/* Общие стили */
 .mission-wrapper {
   display: flex;
   flex-direction: column;
@@ -82,4 +83,54 @@
 .benefits-image-block img {
   width: 100%;
   border-radius: 20px;
+}
+
+/* Адаптивность по Bootstrap breakpoint */
+@media (max-width: 992px) {
+  /* md */
+  .mission-container,
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mission-text-block,
+  .benefits-text-block,
+  .mission-image-block,
+  .benefits-image-block {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* sm */
+  .mission-title h2,
+  .benefits-title h2 {
+    font-size: 32px;
+  }
+  .mission-text-block p,
+  .benefits-text-block p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* xs */
+  .mission-wrapper {
+    padding-bottom: 5%;
+  }
+  .mission-text-block,
+  .benefits-text-block,
+  .mission-image-block,
+  .benefits-image-block {
+    width: 100%;
+  }
+  .mission-title h2,
+  .benefits-title h2 {
+    font-size: 28px;
+  }
+  .mission-text-block p,
+  .benefits-text-block p {
+    font-size: 14px;
+  }
 }

@@ -240,3 +240,123 @@ h2 {
   align-items: flex-end;
   border-radius: 10px;
 }
+
+/* Для мобильных устройств (до 576px) */
+@media (max-width: 575.98px) {
+  .services-cards,
+  .eco-certs-cards,
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-item,
+  .eco-cert-item {
+    width: 90%;
+  }
+
+  .top-cards,
+  .bottom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .farmer,
+  .quality-control,
+  .course {
+    width: 100%;
+  }
+}
+
+/* Для планшетов (от 576px до 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .services-cards,
+  .eco-certs-cards,
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-item,
+  .eco-cert-item {
+    width: 80%;
+  }
+
+  .top-cards,
+  .bottom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .farmer,
+  .quality-control,
+  .course {
+    width: 80%;
+  }
+}
+
+/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-cards,
+  .eco-certs-cards,
+  .education-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-item,
+  .eco-cert-item {
+    width: 45%;
+  }
+
+  .top-cards,
+  .bottom-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .farmer,
+  .quality-control,
+  .course {
+    width: 45%;
+  }
+}
+
+/* Для стандартных десктопов (от 992px до 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .services-item,
+  .eco-cert-item {
+    width: 30%;
+  }
+
+  .top-cards,
+  .bottom-cards {
+    flex-wrap: wrap;
+  }
+
+  .farmer,
+  .quality-control,
+  .course {
+    width: 32%;
+  }
+}
+
+/* Для больших экранов (1200px и выше) */
+@media (min-width: 1200px) {
+  .services-item,
+  .eco-cert-item {
+    width: 25%;
+  }
+
+  .top-cards,
+  .bottom-cards {
+    flex-wrap: nowrap;
+  }
+
+  .farmer,
+  .quality-control,
+  .course {
+    width: 30%;
+  }
+}

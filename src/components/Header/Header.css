@@ -11,6 +11,15 @@
   z-index: 100000000;
 }
 
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
 .header-navigation.scrolled {
   background-color: #eec044;
   transition: background-color 0.3s ease-in-out;
@@ -86,6 +95,40 @@
   color: #f2f2f2;
 }
 
-.menu-item::marker {
-  content: none;
+@media (max-width: 900px) {
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .header-container {
+    display: none;
+    background-color: #eec044;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container.open {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    padding: 10px;
+    display: block;
+  }
+
+  .menu-item::marker {
+    display: none !important;
+    color: transparent !important;
+  }
 }

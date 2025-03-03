@@ -62,3 +62,105 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+/* Для мобильных устройств (до 576px) */
+@media (max-width: 575.98px) {
+  .contacts-title {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .contacts-bg {
+    padding: 10% 5%;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    width: 95%;
+    padding: 8%;
+    gap: 20px;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  .message-input {
+    width: 100%;
+  }
+}
+
+/* Для планшетов (от 576px до 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contacts-bg {
+    padding: 8% 5%;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    width: 90%;
+    padding: 6%;
+    gap: 30px;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+
+  .message-input {
+    width: 100%;
+  }
+}
+
+/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contacts-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 5%;
+    gap: 5%;
+  }
+
+  .contact-input {
+    width: 280px;
+  }
+
+  .message-input {
+    width: 280px;
+  }
+}
+
+/* Для стандартных десктопов (от 992px до 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contacts-wrapper {
+    flex-direction: row;
+    width: 80%;
+    padding: 4%;
+  }
+
+  .contact-input {
+    width: 300px;
+  }
+
+  .message-input {
+    width: 300px;
+  }
+}
+
+/* Для больших экранов (1200px и выше) */
+@media (min-width: 1200px) {
+  .contacts-wrapper {
+    flex-direction: row;
+    width: 75%;
+    padding: 3%;
+  }
+
+  .contact-input {
+    width: 320px;
+  }
+
+  .message-input {
+    width: 320px;
+  }
+}

@@ -107,3 +107,126 @@
   display: flex;
   color: #fff;
 }
+
+/* Для мобильных устройств (до 576px) */
+@media (max-width: 575.98px) {
+  .footer-wrapper {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    gap: 30px;
+  }
+
+  .footer-things {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-links-list {
+    align-items: center;
+  }
+
+  .soc-icons {
+    justify-content: center;
+  }
+
+  .copy-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Для планшетов (от 576px до 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-wrapper {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8%;
+    gap: 40px;
+  }
+
+  .footer-things {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-links-list {
+    align-items: center;
+  }
+
+  .copy-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-wrapper {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 6%;
+  }
+
+  .footer-things {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .soc-icons {
+    justify-content: flex-start;
+  }
+
+  .copy-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Для стандартных десктопов (от 992px до 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer-wrapper {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+  }
+
+  .footer-things {
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .copy-wrapper {
+    justify-content: space-between;
+  }
+}
+
+/* Для больших экранов (1200px и выше) */
+@media (min-width: 1200px) {
+  .footer-wrapper {
+    width: 75%;
+    padding: 4%;
+  }
+
+  .footer-things {
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .copy-wrapper {
+    justify-content: space-between;
+  }
+}

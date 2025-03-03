@@ -3,14 +3,11 @@ import "./Header.css";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,27 +25,33 @@ const Header = () => {
               <a href="#">AgriCert</a>
             </h2>
           </div>
-          <div className="header-container">
+          <button
+            className="burger-menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+          <div className={`header-container ${menuOpen ? "open" : ""}`}>
             <div className="header-menu">
               <nav className="nav">
                 <ul className="menu">
                   <li className="menu-item">
-                    <a href="#about-anchor" className="menu-item">
+                    <a href="#about-anchor" onClick={() => setMenuOpen(false)}>
                       О компании
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a href="#services" className="menu-item">
+                    <a href="#services" onClick={() => setMenuOpen(false)}>
                       Сертификаты
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a href="#documents" className="menu-item">
+                    <a href="#documents" onClick={() => setMenuOpen(false)}>
                       Документы
                     </a>
                   </li>
                   <li className="menu-item">
-                    <a href="#contacts" className="menu-item">
+                    <a href="#contacts" onClick={() => setMenuOpen(false)}>
                       Контакты
                     </a>
                   </li>

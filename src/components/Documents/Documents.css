@@ -4,6 +4,15 @@
   background-attachment: fixed;
 }
 
+.top-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.doc-card h3 {
+  color: #fff;
+}
+
 .documents-title {
   color: #fff;
   padding-top: 5%;
@@ -30,6 +39,7 @@
 
 .bottom-docs {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -61,4 +71,116 @@
 
 .doc-item p {
   margin: 0;
+}
+
+/* Для мобильных устройств (до 576px) */
+@media (max-width: 575.98px) {
+  .documents-wrapper {
+    padding: 10%;
+  }
+
+  .documents-cards {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-docs,
+  .bottom-docs {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .doc-card {
+    width: 100%;
+    padding: 5%;
+  }
+}
+
+/* Для планшетов (от 576px до 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .documents-wrapper {
+    padding: 8%;
+  }
+
+  .documents-cards {
+    width: 90%;
+  }
+
+  .top-docs,
+  .bottom-docs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .doc-card {
+    width: 80%;
+  }
+}
+
+/* Для небольших ноутбуков и планшетов (от 768px до 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .documents-wrapper {
+    padding: 6%;
+  }
+
+  .documents-cards {
+    width: 85%;
+  }
+
+  .top-docs,
+  .bottom-docs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .doc-card {
+    width: 45%;
+  }
+}
+
+/* Для стандартных десктопов (от 992px до 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .documents-wrapper {
+    padding: 5%;
+  }
+
+  .documents-cards {
+    width: 80%;
+  }
+
+  .top-docs,
+  .bottom-docs {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .doc-card {
+    width: 40%;
+  }
+}
+
+/* Для больших экранов (1200px и выше) */
+@media (min-width: 1200px) {
+  .documents-wrapper {
+    padding: 4%;
+  }
+
+  .documents-cards {
+    width: 75%;
+  }
+
+  .top-docs,
+  .bottom-docs {
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .doc-card {
+    width: 35%;
+  }
 }
