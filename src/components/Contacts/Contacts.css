@@ -6,8 +6,20 @@
   margin-top: 5%;
 }
 
-.contacts-title h2 {
+.phone h3 {
   color: #fff;
+}
+
+.email h3 {
+  color: #fff;
+}
+
+.address h3 {
+  color: #fff;
+}
+
+.contacts-title h2 {
+  color: #fff !important;
 }
 
 .contacts-bg {
