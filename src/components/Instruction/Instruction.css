@@ -1,0 +1,14 @@
+.section-container{
+    max-width: 1700px;
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-content a{
+    text-decoration: none;
+    color: #4e9719;
+}
