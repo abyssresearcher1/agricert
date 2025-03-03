@@ -4,6 +4,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Documents from "./components/Documents/Documents";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Instruction from "./components/Instruction/Instruction";
 import List from "./components/List/List";
 import Mission from "./components/Mission/Mission";
 import Partners from "./components/Partners/Partners";
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Services />
       <List />
+      <Instruction />
       <Documents />
       <Partners />
       <Contacts />
